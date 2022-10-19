@@ -1408,10 +1408,10 @@ namespace SA {
 		putchar('\n');
 	}
 }
-\end{lislisting}
+\end{lstlisting}
 
 \subsection{SAM}
-\begin{lislisting}
+\begin{lstlisting}
 int tot = 1, las = 1, fa[MAXN << 1], ch[MAXN << 1][26], sz[MAXN << 1], len[MAXN << 1], p[MAXN << 1], bkt[MAXN << 1];
 void extend(int c) {
 	int np = ++ tot, p = las;
@@ -1432,7 +1432,7 @@ void extend(int c) {
 For(i, 1, tot) ++ bkt[len[i]];
 For(i, 1, tot) bkt[i] += bkt[i - 1];
 For(i, 1, tot) p[bkt[len[i]] --] = i;
-\end{lislisting}
+\end{lstlisting}
 
 \subsection{Manacher}
 \begin{lstlisting}
